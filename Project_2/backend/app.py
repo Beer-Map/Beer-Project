@@ -65,7 +65,6 @@ def data():
         "province" : province})
 
 
-
 # @app.route("/api/beer")
 # def beer():
 #     y = []

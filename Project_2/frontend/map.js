@@ -1,29 +1,26 @@
-// for (var i = 0; i < stationInfo.length; i++) {
-//     // Create a new station object with properties of both station objects
-//     var station = Object.assign({}, stationInfo[i], stationStatus[i]);
-//     // If a station is listed but not installed, it's coming soon
-//     if (!station.is_installed) {
-//       stationStatusCode = "COMING_SOON";
-//     }
-//     // If a station has no bikes available, it's empty
-//     else if (!station.num_bikes_available) {
-//       stationStatusCode = "EMPTY";
-//     }
-//     // If a station is installed but isn't renting, it's out of order
-//     else if (station.is_installed && !station.is_renting) {
-//       stationStatusCode = "OUT_OF_ORDER";
-//     }
-//     // If a station has less than 5 bikes, it's status is low
-//     else if (station.num_bikes_available < 5) {
-//       stationStatusCode = "LOW";
-//     }
-//     // Otherwise the station is normal
-//     else {
-//       stationStatusCode = "NORMAL";
-//     }
-//     // Update the station count
-//     stationCount[stationStatusCode]++;
-//     // Create a new marker with the appropriate icon and coordinates
-//     var newMarker = L.marker([station.lat, station.lon], {
-//       icon: icons[stationStatusCode]
-//     });
+
+// L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
+//   attribution: "© <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
+//   tileSize: 512,
+//   maxZoom: 18,
+//   zoomOffset: -1,
+//   id: "mapbox/streets-v11",
+//   accessToken: API_KEY
+// }).addTo(myMap);
+
+// d3.json("http://127.0.0.1:5000/alldata").then(function(data){
+//   var lat = data.lat
+//   var long = data.long
+//   var name = data.name
+//   var address = data.address
+//   var city = data.city
+//   var state = data.province
+//   let heatlist = []
+//   for(let i = 0; i<data.length; i++){
+//       heatlist.push([lat[i],long[i]])
+//   }
+//   let heat=L.heatLayer(heatlist,{
+//       radius:20
+//   }).addTo(h)
+  
+// })
