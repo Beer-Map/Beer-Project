@@ -8,6 +8,9 @@ The purpose of this project was to map brewery locations across the USA.
 4. Used a flask app to connect our database to the web and jsonify our data for the map
 5. The maps were created using HTML, JS, CSS, and Mapbox
 
+# Tools
+
+Jupyter Notebook, Pandas, SQL, Python, Flask App, Mapbox, Javascript, JSON, CSS
 
 # Results
 We created 3 different maps to visualize the location of breweries across the US.
